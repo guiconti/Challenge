@@ -1,0 +1,41 @@
+def printBar(amount, type):
+    aux = 0
+    while aux < amount:
+    
+        print type
+        aux += 1
+        
+def printTrace(amount):
+    aux = 0
+    line = " "
+    
+    while aux < amount:
+    
+        line += "-"
+        aux += 1
+        
+    print line
+
+size = 2
+numbers = "12"
+
+space = ""
+singleBar = "|"
+spaceBar = "   |"
+spaceDoubleBar = "|   |"
+
+for number in numbers:
+    
+    if number == "1":
+    
+        printBar(size, singleBar)
+        printBar(1, space)
+        printBar(size, singleBar)
+        
+    elif number == "2":
+        
+        printTrace(size)
+        printBar(size, spaceBar)
+        printTrace(size)
+        printBar(size, singleBar)
+        printTrace(size)

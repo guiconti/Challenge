@@ -1,0 +1,22 @@
+numbers = [15.00, 15.01, 3.00, 3.01]
+
+med = 0
+answer = 0.0
+
+numbers.sort()
+
+for number in numbers:
+    
+    med += number
+
+med = med/len(numbers)
+
+med = round(med, 2)
+
+for number in numbers:
+    
+    if number < med:
+        answer += med - number
+        
+            
+print answer

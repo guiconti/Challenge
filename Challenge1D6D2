@@ -1,0 +1,13 @@
+actualLine = ["*...", "....",".*..","...."]
+answer = []
+
+mineboard = [],[]
+
+for line in actualLine:
+    aux = 0
+    for char in line:
+        mineboard[aux].append(line)
+        aux += 1
+
+
+print mineboard[1][1]

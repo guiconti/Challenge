@@ -1,0 +1,15 @@
+class Challenge:
+    
+    type = "Olha"
+    
+    def __init__(self, name):
+        self.name = name;
+    
+    def Teste(self):
+        print "Hello"
+
+
+c = Challenge("Teste")
+
+c.Teste()
+print c.name

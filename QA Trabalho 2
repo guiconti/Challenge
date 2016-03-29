@@ -1,0 +1,10 @@
+class Trabalho:
+    
+    def CalculaTarifa(self, diai, mesi, anoi, horai, minutoi, segundoi, diaf, mesf, anof, horaf, minutof, segundof):
+        
+        if not isinstance (diai, int) or not isinstance(mesi, int):
+            print "Valores invalidos"
+            return
+
+t = Trabalho()
+t.CalculaTarifa(10, 11, 2016, 17, 10, 10, 4, 11, 2016, 17, 10, 19)

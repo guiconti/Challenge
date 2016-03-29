@@ -1,0 +1,32 @@
+first = 1
+second = 10
+temp = 0
+maxCycleSize = 0
+
+if second > first:
+    temp = first
+    first = second
+    second = temp
+
+while first >= second:
+    
+    temp = second
+    actualCycleSize = 0
+    
+    while temp != 1:
+    
+        if temp % 2 == 0:
+            temp = temp/2
+            actualCycleSize += 1
+        else:
+            temp = temp*3 + 1
+            temp = temp/2
+            actualCycleSize += 2
+    
+    if actualCycleSize > maxCycleSize:
+        maxCycleSize = actualCycleSize
+        maxCycleSize += 1
+        
+    second += 1
+    
+print maxCycleSize
